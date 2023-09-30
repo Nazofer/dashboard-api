@@ -1,0 +1,53 @@
+{
+  "name": "dashboard-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node ./dist/main.js",
+    "lint": "eslint ./src/**/*.ts --ext .ts",
+    "dev": "nodemon",
+    "build": "tsc",
+    "generate": "prisma generate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nazofer/dashboard-api.git"
+  },
+  "author": "Nazar Vovk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nazofer/dashboard-api/issues"
+  },
+  "homepage": "https://github.com/Nazofer/dashboard-api#readme",
+  "dependencies": {
+    "@prisma/client": "^5.3.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "inversify": "^6.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "reflect-metadata": "^0.1.13",
+    "tslog": "^4.9.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.4",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.3",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "prisma": "^5.3.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
